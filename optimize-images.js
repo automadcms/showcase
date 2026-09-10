@@ -8,5 +8,8 @@ for await (const file of glob('temp/*.png')) {
 		path.basename(file, '.png') + '.webp',
 	);
 
-	await sharp(file).webp({ quality: 70 }).toFile(output);
+	await sharp(file)
+		.resize({ width: 800, height: 800, fit: 'inside', withoutEnlargement: true })
+		.webp({ quality: 70 })
+		.toFile(output);
 }
