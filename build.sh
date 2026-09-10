@@ -22,4 +22,7 @@ done < <(jq -r '.[] | [.title, .url, .screenshot] | @tsv' sites.json)
 template=$(cat template.html)
 output="${template//__SITES__/$gallery}"
 
+cache_bust=$(date +%s)
+output="${output//__CACHE_BUST__/$cache_bust}"
+
 printf '%s\n' "$output" >public/index.html
