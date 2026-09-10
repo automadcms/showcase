@@ -1,10 +1,5 @@
 [
   {
-    "title": "Automad Documentation",
-    "url": "https://automad.org",
-    "screenshot": "automad.org.webp"
-  },
-  {
     "title": "Marc Anton Dahmen",
     "url": "https://marcdahmen.de",
     "screenshot": "marcdahmen.de.webp"
@@ -18,5 +13,15 @@
     "title": "EcoTool",
     "url": "https://ecotool.org",
     "screenshot": "ecotool.org.webp"
+  },
+  {
+    "title": "Studio DMTW",
+    "url": "https://studio-dmtw.de",
+    "screenshot": "studio-dmtw.de.webp"
+  },
+  {
+    "title": "Automad Documentation",
+    "url": "https://automad.org",
+    "screenshot": "automad.org.webp"
   }
 ]
