@@ -1,0 +1,21 @@
+{
+  "name": "showcase",
+  "version": "1.0.0",
+  "description": "A showcase for real Automad sites",
+  "homepage": "https://github.com/automadcms/showcase#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/automadcms/showcase.git"
+  },
+  "scripts": {
+    "optimize": "node optimize-images.js",
+    "build": "bash build.sh",
+    "serve": "php -S 0.0.0.0:8000 -t public"
+  },
+  "type": "module",
+  "license": "MIT",
+  "author": "Marc Anton Dahmen",
+  "dependencies": {
+    "sharp": "^0.35.4"
+  }
+}
