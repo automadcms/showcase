@@ -26,6 +26,7 @@ Raw screenshots are dropped into `temp/*.png` (gitignored, see `temp/README.md`)
 Visual inspiration came from `references/` (screenshots of other portfolio/gallery sites), most closely `gridsgallery.com`: light-grey square tiles with a centered, contained image and a small left-aligned caption below.
 
 Established direction so far:
+
 - **Typography**: Inter, loaded as a variable font via the unpkg CDN (`@fontsource-variable/inter`), no self-hosting.
 - **Title ("Showcase")**: bold/heavy (800 weight), large (`clamp(3rem, 7vw, 5.5rem)`), tight line-height (0.9) and letter-spacing (-0.035em), uppercase — a deliberate Swiss-grid / International Typographic Style choice (heavy grotesque, tight tracking, poster-like scale).
 - **Header layout**: flex row, `space-between`, `align-items: flex-end` so the small "Automad" link baseline-aligns with the bottom of the large title.
@@ -37,5 +38,5 @@ Established direction so far:
 ## Known gaps / things to watch
 
 - This project's dev sandbox cannot bind a listening TCP socket, so `npm run serve` cannot be verified from inside an automated session — visual checks need a human (or a session without that restriction) to actually load `http://localhost:8000`.
-- `sites.json` and `public/screenshots/` must be kept manually in sync — adding a site means both adding an entry to `sites.json` *and* ensuring the referenced `.webp` file exists.
+- `sites.json` and `public/screenshots/` must be kept manually in sync — adding a site means both adding an entry to `sites.json` _and_ ensuring the referenced `.webp` file exists.
 - `public/index.html` is a generated file (output of `build.sh`) — edit `template.html` and `styles.css`, not `public/index.html` directly, or changes will be lost on the next build.
